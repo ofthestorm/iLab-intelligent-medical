@@ -628,6 +628,22 @@ h6 {
 .page-content {
   padding: 120px 0;
 }
+.photo {
+  width: 150px;
+  -webkit-clip-path: polygon(0 0, 150px 0px, 150px 190px, 0 190px);
+  clip-path: polygon(0 0, 150px 0px, 150px 190px, 0 190px);
+  position: relative;
+}
+.test1 {
+  position: relative;
+  /*top:0;*/
+}
+.test {
+  position: relative;
+  /*bottom: 5000px;*/
+  top: 10px;
+}
+
 .about {
   padding: 100px 0 0;
 }
