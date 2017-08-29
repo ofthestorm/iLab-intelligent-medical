@@ -4,7 +4,6 @@ $(function () {
 		horizontalScrolling: false 
 	});
 
-	// Custom Scrollbar
 	var nice = $("html").niceScroll({
 		cursorwidth: 8,
 		cursorborder: "0px solid #fff",
@@ -20,9 +19,7 @@ $(function () {
 
 		event.preventDefault();
 	});
-	/*
-	* Fun Fact with Count Animation
-	*/
+
 	$('.st-ff-count').appear();
 	$(document.body).on('appear', '.st-ff-count', function(e, $affected) {
 		$affected.each(function(i) {
@@ -122,9 +119,6 @@ $(function () {
 	}
 
 
-	/*
-     * Contact Form Validation Code
-     */
     function checkEmpty(selector) {
         if (selector.val()=="" || selector.val()==selector.prop("placeholder")) {
           selector.addClass('formFieldError',500);
