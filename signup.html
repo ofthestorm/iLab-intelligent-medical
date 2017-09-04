@@ -20,17 +20,26 @@
             <div class="col-md-4 con col-md-offset-4">
                 <input type="email" name="email" class="form-control" oninput="" placeholder="请填写您的邮箱" required autofocus>
             </div>
+            <div class="col-md-4 con hintParent">
+                <p id="emailHint" class="hint"></p>
+            </div>
         </div>
         <label>密码</label>
         <div class="row">
             <div class="col-md-4 con col-md-offset-4">
-                <input type="password" name="password" class="form-control" placeholder="密码由6-16位组成" required>
+                <input type="password" name="password" class="form-control" onkeyup="checkPsw(this.value)" placeholder="密码由6-16位数字或字母组成" required>
+            </div>
+            <div class="col-md-4 con">
+                <p id="passwordHint" class="hint"></p>
             </div>
         </div>
         <label>昵称</label>
         <div class="row">
             <div class="col-md-4 con col-md-offset-4">
-                <input type="text" name="name" class="form-control" placeholder="请填写您的名字" required>
+                <input type="text" id="name" class="form-control" onkeyup="checkName(this.value)" placeholder="昵称由1-16位数字、字母、汉字或下划线组成" required>
+            </div>
+            <div class="col-md-4 con">
+                <p id="nameHint" class="hint"></p>
             </div>
         </div>
         <br/>
@@ -54,7 +63,20 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.stellar.js"></script>
+<script src="js/jquery.appear.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/jquery.countTo.js"></script>
+<script src="js/jquery.shuffle.modernizr.js"></script>
+<script src="js/jquery.shuffle.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
 <script src="js/script.js"></script>
+
+<script>
+
+</script>
 </body>
 
 </html>

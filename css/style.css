@@ -444,6 +444,17 @@ h6 {
     opacity: 0;
   }
 }
+/*.hintParent {*/
+  /*position:relative;*/
+/*}*/
+.hint {
+  color: rgb(158, 45, 55);
+  /*background-color: #2b542c;*/
+  text-align: left;
+  line-height: 50px;
+  margin: 0 0 0 0;
+}
+
 .home {
   background-image: url(../images/hero-img9.jpg);
   background-position: top center;
@@ -636,17 +647,14 @@ h6 {
   width: 150px;
   -webkit-clip-path: polygon(0 0, 150px 0px, 150px 190px, 0 190px);
   clip-path: polygon(0 0, 150px 0px, 150px 190px, 0 190px);
-  position: relative;
+
 }
-.test1 {
-  position: relative;
-  /*top:0;*/
+.photo-background {
+  /*position: relative;*/
+  /*width: 10px;*/
+  height: 230px;
 }
-.test {
-  position: relative;
-  /*bottom: 5000px;*/
-  top: 10px;
-}
+
 
 .about {
   padding: 100px 0 0;
@@ -1643,3 +1651,4 @@ footer.site-footer a:hover {
     width: 25%;
   }
 }
+
