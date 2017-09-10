@@ -225,27 +225,48 @@ $(window).load(function () {
 });
 
 function checkName(str) {
-    console.log(str);
     var reg = /^[\u4E00-\u9FA5A-Za-z0-9_]{1,16}$/;
+    var name = document.getElementById("nameHint");
     if(str === "") {
-        document.getElementById("nameHint").innerHTML = "";
-    } else if (reg.test(str)) {
-        document.getElementById("nameHint").innerHTML = "yes";
+        name.innerHTML = "";
+    } else if (!reg.test(str)) {
+        if(str.length > 16) {
+            name.innerHTML = "您的昵称过长！";
+        } else {
+            name.innerHTML = "您的昵称含有非法字符！";
+        }
     } else {
-        document.getElementById("nameHint").innerHTML = "您的昵称不符合规范！";
-
+        name.innerHTML = "";
     }
 }
 
 function checkPsw(str) {
-    console.log(str);
     var reg = /^[a-zA-Z0-9]{6,16}$/;
+    var psw = document.getElementById("passwordHint");
     if(str === "") {
-        document.getElementById("passwordHint").innerHTML = "";
-    } else if (reg.test(str)) {
-        document.getElementById("passwordHint").innerHTML = "yes";
-    } else {
-        document.getElementById("passwordHint").innerHTML = "您的密码不符合规范！";
+        psw.innerHTML = "";
+    } else if (!reg.test(str)) {
+        if(str.length < 6) {
+            psw.innerHTML = "您的密码位数过短！";
+        } else if (str.length > 16) {
+            psw.innerHTML = "您的密码位数过长！";
+        } else {
+            psw.innerHTML = "您的密码含有非法字符！";
+        }
 
+    } else {
+        psw.innerHTML = "";
+    }
+}
+
+function checkEmail(str) {
+    var reg = /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
+    var email = document.getElementById("emailHint");
+    if(str === "") {
+        email.innerHTML = "";
+    } else if (!reg.test(str)) {
+        email.innerHTML = "您的邮箱不符合规范！";
+    } else {
+        email.innerHTML = "";
     }
 }

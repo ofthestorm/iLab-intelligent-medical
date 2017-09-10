@@ -1595,6 +1595,9 @@ a.social.rss i {
 a.social.rss:hover {
   background-color: #f58b04;
 }
+img[src=""]{
+  opacity: 0;
+}
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   a.social:hover {
     padding: 8px 20px 8px 65px;

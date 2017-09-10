@@ -18,7 +18,7 @@
         <label>邮箱</label>
         <div class="row">
             <div class="col-md-4 con col-md-offset-4">
-                <input type="email" name="email" class="form-control" oninput="" placeholder="请填写您的邮箱" required autofocus>
+                <input type="email" name="email" class="form-control" onkeyup="checkEmail(this.value)" placeholder="请填写您的邮箱" required autofocus>
             </div>
             <div class="col-md-4 con hintParent">
                 <p id="emailHint" class="hint"></p>
