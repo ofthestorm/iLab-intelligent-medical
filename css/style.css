@@ -444,12 +444,9 @@ h6 {
     opacity: 0;
   }
 }
-/*.hintParent {*/
-  /*position:relative;*/
-/*}*/
+
 .hint {
   color: rgb(158, 45, 55);
-  /*background-color: #2b542c;*/
   text-align: left;
   line-height: 50px;
   margin: 0 0 0 0;
