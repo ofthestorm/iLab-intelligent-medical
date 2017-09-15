@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Products</title>
+    <title>Writings</title>
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700italic,700,600italic,400italic,600,300italic,300|Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/owl.carousel.css" rel="stylesheet">
@@ -20,6 +21,14 @@
     <script src="js/html5shiv.min.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->
+    <style>
+        .writings {
+            padding-top: 70px;
+        }
+        #title {
+            color: #4ecdc4;
+        }
+    </style>
 </head>
 <body data-spy="scroll" data-target=".main-nav">
 
@@ -40,7 +49,7 @@
             <div class="collapse navbar-collapse main-nav" id="sept-main-nav">
                 <ul class="nav navbar-nav navbar-left">
                     <li><a href="index.html">主页</a></li>
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="robot.html">智能机器人</a></li>
@@ -49,7 +58,7 @@
                         </ul>
                     </li>
                     <li><a href="about.html">关于我们</a></li>
-                    <li><a href="news.html">实验室动态</a></li>
+                    <li class="active"><a href="news.html">实验室动态</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="login.html">登录</a></li>
@@ -60,65 +69,29 @@
     </nav>
 </header>
 
-
-<section class="features-desc">
+<section class="writings" id="writings">
     <div class="container">
         <div class="row">
-                <h1 class="bottom" style="color: #4ecdc4">医学辅助诊断</h1>
-                <br/>
-                <h4 class="bottom-line">背景知识</h4>
-                <br/>肺癌已经成为人类健康发病和死亡率高的重大威胁。特别是每年因肺癌死亡的人数排在恶性肿瘤的首位，超过了前列腺癌，结肠癌和乳腺癌等其他癌症。根据临床经验，恶性肺结节对肺癌有重要意义。如果可以在早期诊断出这些结节，通过医生的专业治疗，可有效提高病人的存活率。
-                <br/><br/>肺结节通常是肺或圆形或椭圆形的肺组织，它们可以通过具有较高检查质量的计算机断层扫描（CT）来进行检测，且其图像质量优于其他扫描工具。而医疗数据中有90%来自于医学影像，并且我国医学影像的数据正以30%的年增长率逐年增长，相比之下，影像科医生的增长速度难以应对这样的增长趋势。因此鉴别结节的良恶性变成了一项极具挑战性的工作，且高负荷的状态也会不可避免地导致误诊和漏诊的病例。因此，我们开发出了一个计算机辅助诊断（CAD）系统来解决肺结节分类领域中的这个问题来取代完全依赖放射科医师的传统做法。我们的模型运用了当今时兴的深度学习的相关算法，对结节的特征进行提取学习，最终，我们的模型在LIDC数据库上得到显著的效果，与其它现有方法相比，我们的方法也有一着突破性的贡献。
-                <br/><br/>ILAB实验室致力于将新科技及时应用在医疗领域，并与多家医院进行合作，力求共同推动智能医疗时代发展。
-        </div>
-    </div>
-</section>
-
-<section class="features-desc" style="background-color: rgb(234,238,242);">
-    <div class="container">
-        <div class="row">
-            <!--<div class="col-md-8 col-md-offset-2">-->
-                <h4 class="bottom-line">我们的优势</h4>
-                <p>
-                    <br/><h4 class="bottom">大数据</h4>
-                    运用大型肺部图像数据库LIDC，并结合东方医院提供的数据，力求更大更好的数据。
-                    <br/><h4 class="bottom">高质量</h4>
-                    运用人工智能去辅助医生进行诊断，更好的避免了医疗上的失误，更好的帮助病人进行及时的诊断治疗。
-                    <br/><h4 class="bottom">全面性</h4>
-                    用户只需提供自己的肺部扫描CT图像，系统可以为用户提供一份全面的诊断报告，供医生和用户参考。
-                </p>
-            <!--</div>-->
-        </div>
-    </div>
-</section>
-
-<section class="features-desc" style="background-color: rgb(255,255,255);">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <img src="images/dia01.png" class="img-responsive">
-            </div>
-            <div class="col-md-6">
-                <img src="images/dia02.png" class="img-responsive">
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="call-2-acction" data-stellar-background-ratio="0.4">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="c2a">
-                    <h2>联系我们</h2>
-                    <p>地址：上海市曹安公路4800号同济大学济事楼308室<br/>电话：<br/>邮箱：</p>
-                    <img style="width: 150px" src="images/QR.png">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="blog-post">
+                    <h2 class="post-title" id="title">标题</h2>
+                    <div class="post-meta" id="time">
+                        <span><strong>2017 - 8 - 28</strong></span>
+                    </div>
+                    <div class="post-thumb">
+                        <img src="images/temp2.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="post-content" id="content">
+                        <p>
+                            正文
+                        </p>
+                        <br/><a href="news.html" class="more-link"> 返回</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
 
 <footer class="site-footer">
     <div class="container">
@@ -142,5 +115,6 @@
 <script src="js/owl.carousel.js"></script>
 <script src="js/jquery.ajaxchimp.min.js"></script>
 <script src="js/script.js"></script>
+
 </body>
-</html>>
+</html>

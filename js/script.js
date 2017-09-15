@@ -199,6 +199,9 @@ $(function () {
     //         $('#nameHint').load("hint.html #nameHintn");
     //     }
     // });
+    // var window_height = $(window).height();
+    // $('.sign-up-right').css("height", window_height);
+    // // $('.sign-up-left').css("height", window_height);
 
 
 });
@@ -223,4 +226,3 @@ $(window).load(function () {
         $('input[name="filter"]:checked').parent().addClass('btn-main');
     });
 });
-

@@ -444,14 +444,9 @@ h6 {
     opacity: 0;
   }
 }
-
 .hint {
   color: rgb(158, 45, 55);
-  text-align: left;
-  line-height: 50px;
-  margin: 0 0 0 0;
 }
-
 .home {
   background-image: url(../images/hero-img9.jpg);
   background-position: top center;
@@ -1472,11 +1467,7 @@ ul.styled-list.list-star li:before {
   background-color: #4ecdc4;
   color: #fff;
 }
-.sign-up {
-  margin: 0 auto;
-  padding-top: 50px;
-  text-align:center;
-}
+
 .subscribe {
   padding: 120px 0;
   background-image: url(../images/subscribe2.png);
@@ -1591,9 +1582,6 @@ a.social.rss i {
 }
 a.social.rss:hover {
   background-color: #f58b04;
-}
-img[src=""]{
-  opacity: 0;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   a.social:hover {
